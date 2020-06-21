@@ -1,0 +1,325 @@
+
+/* reset*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul, ol{
+list-style-type: none;
+}
+a,
+a:hover,
+a:active,
+a:visited{
+	text-decoration: none;
+	color: inherit;
+}
+html{
+	font-size: 18px;
+
+}
+
+@media(max-width: 1024px){
+	html{
+		font-size: 17px;
+	}
+}
+@media(max-width: 767px){
+	html{
+		font-size: 16px;
+	}
+@media(min-width: 2200px){
+}
+	html{
+		font-size: 2vh;
+	}
+}
+form:focus,
+input:focus, 
+textarea:focus,
+select:focus{
+	outline: none;
+	box-shadow: none;
+}
+body{
+	font-family:"Poppins", sans-serif;
+	padding-top:50px ;
+}
+img:not[.carousel]{
+	box-shadow:  2px 2px 15px lightgreen;
+	border-radius: 15px;
+}
+
+/*****************************************/
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/***slider***/
+.carousel img{
+	width: 100%;
+	max-height: 92vh;
+	overflow: hidden;
+}
+
+
+/***sectie 1***/
+span{
+	margin-left: 40px;
+}
+.gri{
+	background: #f7f6f2;
+	clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
+}
+.container h2{
+	font-weight: 900;
+	font-size: 1.5rem;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.container h3{
+	text-indent: 50px;
+  	text-align: justify;
+	font-size: 1rem;
+	padding: 30px;
+	box-shadow: inset 0px 0px 5px lightgreen;
+}
+.container .img {
+	margin-top: 20px;
+
+}
+.paralax{
+	background-image: url('../img/1.jpg');
+	background-position: 100vh 100%;
+	background-attachment: fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 500px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.paralax2{
+	background-image: url('../img/6.jpg');
+	background-position: 100vw 100%;
+	background-attachment: fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 500px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.paralax3{
+	background-image: url('../img/14.jpg');
+	background-position: 100vh 100%;
+	background-attachment: fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 500px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.container .btn{
+	box-shadow: inset 0px 0px 5px lightgrey;
+	padding: 5px 30px;
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+	background: lightgreen;
+	color: #ffffff;
+	margin-top:50px;
+	margin-bottom:80px;
+}
+.btn{
+	box-shadow: inset 0px 0px 5px lightgrey;
+	padding: 5px 30px;
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+	background: lightgreen;
+	color: #ffffff;
+	margin-top:50px;
+	margin-bottom:80px;
+}
+.btn:hover{
+	color: lightgreen;
+	background: #fff;
+	border: 1px solid lightgreen;
+	box-shadow: inset 0px 0px 5px lightgreen;
+}
+
+.modal{
+	background: grey;
+	width: 30%;
+	margin: 30px auto;
+	border: 1px solid lightgreen;
+	box-shadow:  0px 0px 5px lightgreen;
+	color: #fff;
+	border-radius: 20px; 
+	z-index: 6666;
+	overflow: hidden;
+}
+.btn-modal{
+	margin-top:-60px;
+	margin-bottom:-60px;
+}
+/*** pagina foto****/
+
+
+.tab {
+  overflow: hidden;
+}
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  /*border: 1px solid #ccc;*/
+  border-top: none;
+}
+span{
+	margin-left: 0;
+}
+#myGallery{
+	max-width: 100%;
+	filter: grayscale(100%);
+	transition: .5s;
+}
+#myGallery:hover{
+	max-width: 100%;
+	filter: grayscale(0%);
+	background: #f7f6f2;
+}
+#myGallery2{
+	max-width: 100%;
+	filter: grayscale(100%);
+}
+#myGallery2:hover{
+	max-width: 100%;
+	filter: grayscale(0%);
+	background: #f7f6f2;
+}
+#myGallery3{
+	max-width: 100%;
+	filter: grayscale(100%);
+}
+#myGallery3:hover{
+	max-width: 100%;
+	filter: grayscale(0%);
+	background: #f7f6f2;
+}
+/***pagina video***/
+
+iframe{
+	margin-top: 10px;
+	width: 100%;
+	height: 450px;
+	box-shadow:  0px 0px 5px lightgreen;
+}
+
+.text{
+	border: 1px solid lightgreen;
+	padding: 5px 10px; 
+	box-shadow:inset  0px 0px 5px lightgreen;
+}
+p{
+	box-shadow:inset  0px 0px 5px lightgreen;
+	padding: 5px 10px;
+}
+
+
+
+/***pagina contact***/
+.color{
+	box-shadow:inset  0px 0px 5px lightgreen;
+	border-radius: 15px;
+}
+.container .centru{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 10px;
+	text-indent: 0;
+  	text-align: center;
+  	box-shadow: none;
+}
+form{
+	max-width: 500px;
+	margin: 4rem auto;
+	padding: 1rem;
+	box-shadow:inset  0px 0px 5px lightgreen;
+	border-radius: 15px;
+}
+.form-group input:focus{
+	border-color: lightgreen;
+	box-shadow:inset  0px 0px 5px lightgreen;
+}
+.row textarea:focus{
+	border-color: lightgreen;
+	box-shadow:inset  0px 0px 5px lightgreen;
+}
+form .btn{
+	margin-bottom: 0
+}
+
+
+
+/*media query */
+
+@media(min-width: 1024px){
+.text{
+	margin: 10px 30px 10px 40px;
+}
+}
+@media(min-width: 768px){
+.text{
+	margin: 10px 20px 10px 30px;
+}
+}
+@media(max-width: 767px){
+	.carousel img{
+	width: 100%;
+	max-height: 60vh;
+	overflow: hidden;
+}
+
+	.container h2{
+		font-size: 1.5rem;
+	}
+	.container h3{
+		font-size: 1rem;
+	}
+	.modal{
+		width: 80%;
+	}
+	.modal h4{
+		font-size: 0.75rem;
+	}
+	.btn-modal{
+		font-size:1rem;
+		padding: 5px 10px;
+		margin-top:-80px;
+}
+	.text{
+		margin-bottom:10px ;
+}
+}

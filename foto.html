@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="RO-ro">
+ 
+ <head>
+    <!-- head se ocupa de functionalitatea paginii -->
+      
+         <title>La Plimbare</title>
+         <meta charset="UTF-8">
+         <meta name="keywords" content="">
+         <meta name="description" content="">
+         <meta name="robots" content="index,follow">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+         <link href="css/font-awesome.min.css" rel="stylesheet">
+         <link href="css/zoomy.css" rel="stylesheet">
+         <link href="css/style.css" rel="stylesheet">
+
+	
+</head>
+
+<body >
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">La Plimbare</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Acasa</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galerie <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="foto.html">Fotografii</a></li>
+            <li><a href="video.html">Videoclipuri</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- taburi -->
+
+    <div class="container">
+      <div class="row">
+          <div class="tab">
+              <button class="tablinks active" onclick="openCity(event, 'Deva')">Deva</button>
+              <button class="tablinks" onclick="openCity(event, '7Scari')">7 Scari</button>
+              <button class="tablinks" onclick="openCity(event, 'Clisura')">Clisura</button>
+          </div>
+
+          <div id="Deva" class="tabcontent" style="display:block;">
+            <h3>Fotografii din excursia de o zi facuta in Cetatea Devei</h3><div id="myGallery">
+            </div>
+          </div>
+
+          <div id="7Scari" class="tabcontent">
+          <h3>Fotografii din excursia de o zi facuta in Canionul 7 Scari</h3>
+          <div id="myGallery2"> 
+          </div>
+        </div>
+        <div id="Clisura" class="tabcontent">
+          <h3>Fotografii din excursia de o zi facuta pe Clisura Dunarii</h3>
+          <div id="myGallery3">
+          </div>
+        </div>
+
+
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script> 
+
+<script src="js/zoomy.js"></script>
+<script>
+  var urls = [
+    'img/1.jpg',
+    'img/2.jpg',
+    'img/3.jpg',
+    'img/4.jpg',
+    'img/5.jpg'
+];
+$('#myGallery').zoomy(urls, {
+
+
+});
+</script>
+<script>
+  var urls = [
+    'img/6.jpg',
+    'img/7.jpg',
+    'img/8.jpg',
+    'img/9.jpg',
+    'img/10.jpg',
+    'img/11.jpg'
+];
+$('#myGallery2').zoomy(urls, {
+
+
+});
+</script>
+<script>
+  var urls = [
+    'img/12.jpg',
+    'img/13.jpg',
+    'img/14.jpg',
+    'img/15.jpg',
+    'img/16.jpg',
+    'img/17.jpg'
+];
+$('#myGallery3').zoomy(urls, {
+
+
+});
+</script>
+</body>
+</html>
